@@ -88,6 +88,10 @@ header {
   cursor: pointer;
 }
 
+.btn:hover {
+  opacity: 0.5;
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
@@ -117,6 +121,31 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
+
+.modals {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+
+}
+
+.modal-content {
+  background-color: wh;
+  border-width: 2px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  margin: 15% auto;
+  padding: 80px;
+  width: 50%;
+  opacity: 100%;
+  
+}
+
 
 @media (max-width: 690px) {
   .btn {

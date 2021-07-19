@@ -1,17 +1,41 @@
+const characterAmountRange = document.getElementById
+('characterAmountRange')
+const characterAmountNumber = document.getElementById
+('characterAmountNumber')
+
+characterAmountNumber.addEventListener('input', syncCharacterAmount)
+characterAmountRange.addEventListener('input', syncCharacterAmount)
+
+function syncCharacterAmount(e) {
+  const value = e.target.value
+  characterAmountNumber.value = value
+  characterAmountRange.value = value
+}
+
 // Assignment code here
+var modal = document.querySelector('modal');
+
+var modalButton = document.querySelector('generate');
+
+generate.addEventListener('click', openModal);
+
+function openModal() {
+  modal.style.display = 'block';
+}
+
 
 
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+// ----- var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// -----function writePassword() {
+// -----  var password = generatePassword();
+// -----  var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+// -----  passwordText.value = password;
 
-}
+// ----- }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// -----generateBtn.addEventListener("click", writePassword);

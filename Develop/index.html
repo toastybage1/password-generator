@@ -34,11 +34,34 @@
       </div>
     </div>
 
-    <div class="modals">
-      <div id="modals-passwordLength" class="modal-content">
-        <p>How long would you like your password to be? For maximum security it needs to be 8 or more characters and 128 or fewer characters.</p>
-        <input type="text">
-        <button class="btn">Submit</button>
+
+    <div id="modalContainer">
+      <div id="modal" class="modalContent">
+
+        <h3>Password Parameters</h3>
+
+        <form id="passwordGenerator" class="form">
+          <label for="characterAmountNumber">Number of characters</label>
+          <div>
+            <input type="range" min="8" max="128" value="15" id="characterAmountRange">
+            <input type="number" min="8" max="128" value="15" id="characterAmountNumber">
+          </div>
+
+          <label for="includeUppercase">Include Uppercase Letters?</label>
+          <input type="checkbox" id="includeUppercase">
+
+          <label for="includeNumbers">Include Numbers?</label>
+          <input type="checkbox" id="includeNumbers">
+
+          <label for="includeSymbolsSymbols">Include Symbols?</label>
+          <input type="checkbox" id="includeSymbols">
+
+          <button type="submit" class="btn">Generate Password</button>
+        </form>
+       
+
+
+        
       </div>
     </div>
 

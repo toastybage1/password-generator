@@ -3,6 +3,9 @@ var modalBtn = document.getElementById('generate')
 
 modalBtn.addEventListener('click', openModal);
 
+
+
+
 function openModal() {
   modal.style.display = 'block'
 }
@@ -39,6 +42,7 @@ form.addEventListener('submit', e => {
   const includeSymbols = includeSymbolsElement.checked
   const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols)
   passwordDisplay.innerText = password
+  modal.style.display = "none"
 })
 
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
@@ -70,6 +74,7 @@ function syncCharacterAmount(e) {
   characterAmountNumber.value = value
   characterAmountRange.value = value
 }
+
 
 
 

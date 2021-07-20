@@ -148,6 +148,12 @@ button[disabled] {
   flex-direction: column;
 }
 
+.closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+}
+
 .form {
   display: grid;
   grid-template-columns: auto auto;
